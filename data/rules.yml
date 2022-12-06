@@ -1,6 +1,13 @@
 version: "3.1"
 
 rules:
+# - rule: Start Conversation with user
+#   conversation_start: true
+#   steps:
+#   - action: convo_started
+#   - action: utter_bottext
+#   - intent: greeting
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

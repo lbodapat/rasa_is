@@ -1,0 +1,16 @@
+- greeting
+- nonresponsive_statement
+- open_question elicitation
+- provide
+- positive_answer
+- hold
+- yes_no_question
+- thanking 
+- negative_answer
+- refusal
+- apology
+- responsive_statement 
+- response_to_thanking 
+- closing
+
+    - my name is Kakamowa[ and my ]{"entity": "name", "value": "Kakamowa"}phone number is 9866697897[]{"entity": "phone_num", "value": "9866697897"}

@@ -1,6 +1,23 @@
 version: "3.1"
 
 nlu:
+- intent: reclassify
+  examples: |
+    - hi i m wondering if you can help me .-HELP?
+    - oh yes i ordered something from amazon . . . but you contacted me so you should know my information !
+    - of course i just have a few more questions for you .
+
+- intent: convo_started
+  examples: |
+    - ...
+    - ###
+    - @@@
+    - $$$
+    - &&&
+    - ***
+    - !!!
+    - +++
+
 - intent: greeting_question
   examples: |
     - how are you ?
@@ -13,10 +30,13 @@ nlu:
     - hello nameslota i m nameslotu how are you today ?
     - good how are you
     - i am good how are you ?
+    - hi yes thats me how are you ?
+    - how are you this evening ?
 
 - intent: greeting
   examples: |
     - hey
+    - how can I help you ?
     - hello nameslota .
     - hi there .
     - hi nameslota .
@@ -33,8 +53,8 @@ nlu:
     - hi nameslota .
     - hi nameslota this is nameslotu  
     - hi nameslota
-    - could be better .
-    - i am doing very well .
+    - could be better.
+    - i am doing very well.
     - hey am okay
     - hi nameslota .
     - good thank you .
@@ -46,10 +66,7 @@ nlu:
     - hi my name is nameslotu
     - hi nameslota
     - hello i m nameslotu .
-    - hi yes thats me how are you ?
-    - hi i m wondering if you can help me .
     - i am doing swell !
-    - how are you this evening ?
     - hello nameslota .
     - hi there
     - fine
@@ -890,8 +907,6 @@ nlu:
     - i think that d be the smart thing to do .
     - i will try and find my account number .
     - of course .
-    - of course i just have a few more questions for you .
-    - oh yes i ordered something from amazon . . . but you contacted me so you should know my information !
     - please do and cancel my prime too
     - speaking .
     - sure
@@ -931,12 +946,18 @@ nlu:
     - yes thank you
     - yes thank you nameslota have a good day bye
     - yes that is fine
-    - yes that s correct
+    - yes thats correct
     - yes the item never arrived .
-    - yes this is him .
+    - yes this is him.
     - yes this is nameslotu .
     - yes usually my account is already up and they see
     - yes you can do that since you are already on my account page .
+    - please tell me
+    - yes please tell me
+    - why are you texting me ?
+    - why did you message me ?
+    - how can I help you ?
+    - what is the problem ?
 
 - intent: hold
   examples: |
@@ -985,7 +1006,6 @@ nlu:
     - thats not possible .
     - well
     - well .
-    - well . . .
     - well thats good
     - what ?
     - why ?
@@ -995,18 +1015,29 @@ nlu:
     - yes !
     - yes .
 
-- intent: yes_no_question
+- intent: yes_no_identity
   examples: |
-    - alright is there a number i can reach you at in case this chat disappears ?
-    - am i not talking to amazon ?
     - amazon ?
+    - am i not talking to amazon ?
+    - alright is there a number i can reach you at in case this chat disappears ?
     - and you are working for amazon ?
-    - are we done here ?
     - are you able to confirm you are an amazon employee before i give you my info ?
-    - are you able to look up my order using my phone number ?
-    - are you able to verify my information which is attached to the order ?
     - are you calling from the shipment center ?
     - are you from aamzon customer service department ?
+    - are you with the service department ?
+    - certainly can you verify that you work for amazon ?
+    - do you work on amazon ?
+
+- intent: yes_no_help
+  examples: |
+    - can you help with my order ?
+    - so can you help me ?
+
+- intent: yes_no_question
+  examples: |
+    - are we done here ?
+    - are you able to look up my order using my phone number ?
+    - are you able to verify my information which is attached to the order ?
     - are you going to need my credit card information for this ?
     - are you lucky enough to be in a warm state ?
     - are you still there mr . nameslota ?
@@ -1014,13 +1045,11 @@ nlu:
     - are you sure you can t give me any information on my heater with the info provided ?
     - are you the person sending me the heater ?
     - are you updating the file on my heater ?
-    - are you with the service department ?
     - been there long ?
     - can i ask what you re seeing on your end ?
     - can i return the heater ?
     - can you access it via my account info
     - can you check with my address instead ?
-    - can you help with my order ?
     - can you hold while i go find my card ?
     - can you just look up my name ?
     - can you just look up my purchased via my account ?
@@ -1032,7 +1061,6 @@ nlu:
     - can you see if it got cancelled and moved to my cancelled orders ?
     - can you see me account ?
     - can you send me the order number
-    - certainly can you verify that you work for amazon ?
     - could you check the delivery and shipping status of the item for me please ?
     - could you please give me specific information about what refund are you processing ?
     - did my order get canceled ?
@@ -1059,7 +1087,6 @@ nlu:
     - do you not have that card number on the system ?
     - do you think they re me from the future like in terminator ?
     - do you want my credit card number ?
-    - do you work on amazon ?
     - don t you already have that if you re calling about the shipment ?
     - don t you have that ?
     - don t you have the card info on file ?
@@ -1125,7 +1152,6 @@ nlu:
     - should i give the card info here ?
     - shouldn t that all be on file already since i ordered it but never recieved it ?
     - so can t you look up my number ?
-    - so can you help me ?
     - so i will get a refund as well as my heater ?
     - so the card details i entered was wrong then
     - so there are heaters that haven t arrived ?
@@ -1214,7 +1240,7 @@ nlu:
 - intent: negative_answer
   examples: |
     - i can not remember at this time the code of the product
-    - i didn t receive a tracking number .
+    - i didn't receive a tracking number .
     - i dont actually is that needed i can give you address phone number
     - i have not called amazon maybe you are confusing me with someone else ?
     - i think my wife has it with her .
@@ -1247,6 +1273,9 @@ nlu:
     - oh but i need my heater !
     - that doesn t seem to be my credit card number
     - well no you ve not answered my initial question
+    - please contact me later
+    - i am busy
+    - lets connect later
 
 - intent: refusal
   examples: |
@@ -1325,9 +1354,9 @@ nlu:
 
 - intent: apology
   examples: |
-    - i am sorry .
-    - i m sorry nameslota .
-    - im sorry i can give you other information if thats okay
+    - I am sorry .
+    - I'm sorry nameslota .
+    - I'm sorry i can give you other information if thats okay
     - sorry for so many questions worried about scammers
 
 - intent: responsive_statement

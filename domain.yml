@@ -17,146 +17,131 @@ intents:
   - responsive_statement 
   - response_to_thanking 
   - closing
+  - convo_started
+  - reclassify
+  - greeting_question
+  - yes_no_identity
+  - yes_no_help
+  - test
+
+entities:
+  - phone_num
+  - email
+
+slots:
+  name:
+    type: text
+    # influence_conversation: false
+    mappings:
+    - type: from_text
+      intent: provide
+  phone_num:
+    type: text
+    # influence_conversation: false
+    mappings:
+    - type: from_entity
+      intent: provide
+      entity: phone_num
+  email:
+    type: text
+    # influence_conversation: false
+    mappings:
+    - type: from_entity
+      intent: provide
+      entity: email
+  credit_card:
+    type: text
+    # influence_conversation: false
+    mappings:
+    - type: from_text
+      intent: provide
+  cvv:
+    type: text
+    # influence_conversation: false
+    mappings:
+    - type: from_text
+      intent: provide
+  addr:
+    type: text
+    # influence_conversation: false
+    mappings:
+    - type: from_text
+      intent: provide
 
 responses:
+  utter_ask_name:
+  - text: "Please can you confirm your full name ?"
+  - text: "May I know your full name for confirmation ?"
+
+  utter_ask_phone_num:
+  - text: "Please can you confirm your phone number ?"
+  - text: "May I know your phone number for confirmation ?"
+
+  utter_ask_addr:
+  - text: "I would also require your delivery address."
+  - text: "Now, please can you share your delivery address for verification?"
+
+  utter_ask_credit_card:
+  - text: "I would require your credit card number used for Amazon purchases to initiate the refund."
+  - text: "Kindly provide your credit card number used for Amazon purchases. I will initiate the refund to this card."
+
+  utter_ask_cvv:
+  - text: "Finally, please confirm your CVV, before I initiate the refund."
+  - text: "Please confirm your CVV number. Your refund will be shortly initiated."
+
   utter_greet_reply:
-  - text: "am good"
-  - text: "doing well ."
+  - text: "I am good"
+  - text: "I am doing well."
+  - text: "I am doing good, Thank you for asking !"
+  - text: "I am doing well, Thank you ."
+  - text: "I am here to help ."
+  - text: "I am well."
+  - text: "I'm doing very well, Thank you for asking."
+  - text: "I'm glad to hear it I'm doing well also."
 
   utter_greet:
-  - text: "hello my name is nameslota and i am with amazon customer support ."
-  - text: "Hello, amazon customer support here ."
-  - text: "good !"
-  - text: "good day ."
-  - text: "good day mr . nameslotu ."
-  - text: "good day this is amazon customer support ."
-  - text: "good day how are you ?"
-  - text: "good day my name is nameslota from amazons customer service department ."
-  - text: "greetings this is nameslota with amazon customer service ."
-  - text: "hello !"
-  - text: "hello ."
-  - text: "hello how are you today ?"
-  - text: "hello i am nameslota with amazon"
-  - text: "hello is mr nameslotu ?"
-  - text: "hello is that nameslotu ?"
-  - text: "hello is the nameslotu ?"
-  - text: "hello is this nameslotu ?"
-  - text: "hello mr . nameslotu how are you today ?"
-  - text: "hello mr . nameslotu i am nameslota and i will be assisting you this evening ."
-  - text: "hello mr . nameslotu i m nameslota ."
-  - text: "hello mr nameslotu ."
-  - text: "hello my name is nameslota ."
-  - text: "hello my name is nameslota and i am with amazon customer support ."
-  - text: "hello my name is nameslota"
-  - text: "hello nameslotu !"
-  - text: "hello nameslotu ."
-  - text: "hello nameslotu i m nameslota ."
-  - text: "hello nameslotu this is nameslota from amazon customer service ."
-  - text: "hello nameslotu this is nameslota with amazon ."
-  - text: "hello nameslotu"
-  - text: "hello there and merry christmas ."
-  - text: "hello there my name is nameslota"
-  - text: "hello this is nameslota of the amazon customer service staff ."
-  - text: "hello this is nameslota with amazon ."
-  - text: "hello we are just confirming a order you had on amazon to make sure we provide good quality service ."
-  - text: "hello welcome to amazon customer service how can i help ?"
-  - text: "hello"
-  - text: "hey how can i help you ?"
-  - text: "hey nameslotu amazon customer service here ."
-  - text: "hey nameslotu this is nameslota amazon customer service executive ."
-  - text: "hey nameslotu this is nameslota from amazon customer service ."
-  - text: "hi ! i m nameslota from amazon customer service how may i assist you ?"
-  - text: "hi !"
-  - text: "hi ."
-  - text: "hi am i speaking to nameslotu ?"
-  - text: "hi how are you doing tonight my name is nameslota"
-  - text: "hi i am nameslota with amazon ."
-  - text: "hi i am nameslota"
-  - text: "hi i m nameslota with amazon s distribution center ."
-  - text: "hi i m with amazon customer service"
-  - text: "hi im nameslota with amazon customer service staff ."
-  - text: "hi is that nameslotu ?"
-  - text: "hi my name is nameslota how may i help you"
-  - text: "hi my name is nameslota"
-  - text: "hi my name s nameslota and i ll be assisting you today ."
-  - text: "hi nameslotu ."
-  - text: "hi nameslotu how are you this evening ?"
-  - text: "hi nameslotu i m calling from amazon ."
-  - text: "hi nameslotu i m nameslota and i ll be helping you with your amazon order today ."
-  - text: "hi nameslotu it s nameslota here from amazon customer support ."
-  - text: "hi there i am an amazon worker how may i help you"
-  - text: "hi there my name is nameslota how can i help you today ?"
-  - text: "hi this is nameslota ."
-  - text: "hi"
-  - text: "hii"
-  - text: "how are you ?"
-  - text: "how are you doing ?"
-  - text: "how are you doing today ?"
-  - text: "how are you today ?"
-  - text: "how can i help you ?"
-  - text: "how can i help you today mr . nameslotu ?"
-  - text: "how s it going ?"
-  - text: "hows it going ?"
-  - text: "i am doing good thanks for asking !"
-  - text: "i am doing well thanks ."
-  - text: "i am here to help ."
-  - text: "i am nameslota ."
-  - text: "i am nameslota from amazon ."
-  - text: "i am well ."
-  - text: "i m doing very well thank you for asking ."
-  - text: "i m glad to hear it i m doing well also ."
-  - text: "im doing pretty good just finished getting out of work how about yourself"
-  - text: "may i speak with mr . nameslotu ?"
-  - text: "mr . nameslotu this is nameslota calling from amazon customer service ."
-  - text: "my name is nameslota !"
-  - text: "my name is nameslota and i am calling from amazon"
-  - text: "my name is nameslota what is your name ?"
-  - text: "my name is nameslota"
-  - text: "nice to meet you !"
-  - text: "thank you for calling amazon customer service this is nameslota speaking ."
-  - text: "welcome to amazon customer support ."
+  - text: "Hello my name is nameslota and I am with Amazon customer support. How are you ?"
+  - text: "Hello my name is nameslota and I am with Amazon customer support. Hope you are doing well."
+  - text: "Hello my name is nameslota and I am with Amazon customer support. Hope you are having a great day."
+  - text: "Hello I am nameslota and I am with Amazon customer support. How are you ?"
+  - text: "Hello I am nameslota and I am with Amazon customer support. Hope you are doing well."
+  - text: "Hello, nameslota from Amazon customer support here. How are you today ?"
+  - text: "Good day this is Amazon customer support."
+  - text: "Good day my name is nameslota from Amazon customer service department. How are you today ?"
+  - text: "Greetings this is nameslota with Amazon customer service. How are you today ?"
+  - text: "Hello this is nameslota of the Amazon customer service staff. How are you today ?"
+  - text: "Hello, welcome to Amazon customer service. How are you today ?"
+  - text: "Hello this is nameslota Amazon customer service executive. How are you today ?"
+  - text: "Hi im nameslota with Amazon customer service staff. How are you today ?"
 
   utter_bottext:
-  - text: "you have been over charged for your heater purchase. I am here to help you get a refund"
-  - text: "i am calling to tell you that you are due a refund on you package"
-  - text: "we believe you have been hacked"
-  - text: "good day nameslotu thank you for contacting amazon customer service about your purchase my name is nameslota and i am here to assist you"
-  - text: "good day nameslotu thank you for your recent purchase on amazon .com"
-  - text: "good day this is nameslota with the amazon anti fraud department ."
-  - text: "hello nameslotu welcome to amazon chat support my name is nameslota opid and i would like to talk with you on your recent purchase from our site ."
-
+  - text: "You have been over charged for your Laptop purchase. I am here to help you get a refund"
+  - text: "I am reaching out to inform you that you are due a refund on you Amazon Laptop purchase."
+  - text: "Thank you for your recent purchase of a Laptop on Amazon.com"
+  - text: "I am with the Amazon anti-fraud department. We believe you have been charged for a Laptop purchase."
+  - text: "I would like to talk with you on your recent Laptop purchase from our site."
+  - text: "I am reaching out to you to confirm an order of a Laptop you had on Amazon. This is to ensure good quality service."
 
   utter_apology:
-  - text: "ah i hate when that happens ."
-  - text: "ah i m sorry i misread it your name is nameslotu"
-  - text: "i am afraid i do not have that information to hand ."
-  - text: "i am so sorry to hear this ."
-  - text: "i am sorry about this"
-  - text: "i am sorry to hear that did you want me to have a look ?"
-  - text: "i apologize !"
-  - text: "i apologize ."
-  - text: "i apologize for the delay ."
-  - text: "i apologize for the inconvenience ."
-  - text: "i apologize for the inconvenience and i would be happy to fix that for you ."
-  - text: "i apologize we can disconnect ."
-  - text: "i m so sorry to hear that ."
-  - text: "i m sorry ."
-  - text: "i m sorry about that ."
-  - text: "i m sorry for the inconvenience ."
-  - text: "i m sorry that your heater is delayed ."
-  - text: "i m sorry to hear that ."
-  - text: "i m sorry to hear that i ll try to help you out ."
-  - text: "i m sorry your heater still hasn t arrived ."
-  - text: "i used we in error i apologize"
-  - text: "my apologies for that ."
-  - text: "oh i am sorry to hear that ."
-  - text: "oh i m sorry to hear that ?"
-  - text: "sorry for the inconvenience"
-  - text: "sorry i may have forgotten to mention ."
-  - text: "sorry misunderstood"
-  - text: "sorry to hear that ."
-  - text: "weird regulation unfortunately ."
-    
+  - text: "I am sorry about this"
+  - text: "I am sorry to hear that. Do you want me to have a look ?"
+  - text: "I apologize !"
+  - text: "I apologize."
+  - text: "I apologize for the inconvenience ."
+  - text: "I apologize for the inconvenience and I would be happy to fix that for you."
+  - text: "I'm so sorry to hear that ."
+  - text: "I'm sorry ."
+  - text: "I'm sorry about that."
+  - text: "I'm sorry for the inconvenience ."
+  - text: "I'm sorry to hear that. I'll try to help you out."
+  - text: "My apologies for that."
+  - text: "Sorry for the inconvenience"
+  
+  utter_elicitation_basic_info:
+  - text: "Before we go ahead and help you any further, we need a few details from you."
+  - text: "Thank you for your patience. Inorder to help you out, we need to confirm a few details from you."
+  - text: "I promise to help you out. Please can you confirm a few details before we proceed ?"
+
   utter_elicitation:
   - text: "address please ?"
   - text: "ah thank you could you confirm your address as well ?"
@@ -1461,6 +1446,11 @@ responses:
   - text: "thank you ."
   - text: "you re welcome ."
 
+  utter_warning:
+  - text: "Please note that, Amazon would not be able to refund your money if you end this conversation."
+  - text: "Amazon will not be able to help you, if this conversation ends."
+  - text: "I have been assigned a ticket to help you. If you end this conversation, I am instructed to close the ticket and stop refund processing."
+
   utter_closing:
   - text: "have a good day !"
   - text: "have a good day"
@@ -1468,11 +1458,28 @@ responses:
   - text: "have a great day ."
   - text: "have a pleasant day !"
   - text: "ok . goodbye ."
-  - text: "you have a good evening ."
 
   utter_iamabot:
   - text: "I am not a bot I am an Amazon Customer representative."
   - text: "I am sorry, I am from Amazon, would you like to know more details?" 
+
+actions:
+  - utter_ask_name
+  - utter_ask_phone_num
+  - utter_ask_addr
+  - utter_ask_credit_card
+  - utter_ask_cvv
+
+forms:
+  Form_Info:
+    required_slots:
+      - 
+    #   - name
+    #   - phone_num
+    #   - email
+    #   - addr
+    #   - credit_card
+    #   - cvv
 
 session_config:
   session_expiration_time: 60
