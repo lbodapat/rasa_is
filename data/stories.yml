@@ -1,0 +1,67 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greeting
+  - action: utter_greet
+  - action: utter_bottext
+  - intent: hold
+  - action: utter_apology
+  - intent: yes_no_question
+  - action: utter_elicitation
+  - intent: positive_answer
+  - action: utter_hold
+  - intent: provide
+  - action: utter_thanking
+  - action: utter_elicitation
+  - intent: positive_answer
+  - action: utter_hold
+  - intent: provide
+  - action: utter_elicitation
+  - intent: positive_answer
+  - action: utter_hold
+  - intent: provide
+  - action: utter_thanking
+  - action: utter_closing
+
+- story: bot path
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - action: utter_bottext
+  - intent: hold
+  - action: utter_apology
+  - action: utter_responsive_statement
+  - intent: yes_no_question
+  - action: utter_responsive_statement
+  - action: utter_elicitation
+  - intent: positive_answer
+  - action: utter_hold
+  - intent: provide
+  - action: utter_nonresponsive_statement
+  - action: utter_thanking
+  - action: utter_closing
+ 
+
+# - story: sad path 2
+#   steps:
+#   - intent: greeting
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greeting
+  - action: utter_greet
+  - action: utter_bottext
+  - intent: hold
+  - action: utter_apology
+  - intent: yes_no_question
+  - action: utter_elicitation
+  - intent: open_question
