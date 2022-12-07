@@ -13,3 +13,8 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
   - action: utter_bottext
+
+# - rule: Test actions in RASA
+#   steps:
+#   - intent: convo_started
+#   - action: action_test_rasa

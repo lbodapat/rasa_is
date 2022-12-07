@@ -11,8 +11,9 @@ from typing import Any, Text, Dict, List, Union
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.forms import FormAction
-from rasa_sdk.events import EventType
+
+import logging
+logger= logging.getLogger(__name__)
 
 class ActionHelloWorld(Action):
 
@@ -27,36 +28,21 @@ class ActionHelloWorld(Action):
 
         return []
 
-class FormDataCollect(FormAction):
-    def name(self)-> Text:
-        return "Form_Info"
-    
-    @staticmethod
-    def required_slots(tracker: "Tracker") -> List[Text]:
-        return ["name","phone_num","email","addr","credit_card","cvv"]
+class ActionTestRasa(Action):
 
-    def slot_mapping(self) -> Dict[Text, Union[Dict, List[Dict[Text,Any]]]]:
-        return {
-            "name": [self.from_text()],
-            "phone_num" : [self.from_entity(entity="phone_num")],
-            "email" : [self.from_entity(entity="email")],
-            "addr": [self.from_text()],
-            "credit_card": [self.from_text()],
-            "cvv": [self.from_text()]
-        }
+    def name(self) -> Text:
+        return "action_test_rasa"
 
-    def submit(
-        self,
-        dispatcher: "CollectingDispatcher",
-        tracker: "Tracker",
-        domain: Dict[Text, Any],
-    ) -> List[EventType]:
-        dispatcher.utter_message("Please confirm if the information provided is correct?\nName: {0},\nPhone Number: {1},\nEmail: {2},\nCredit Card Number: {3},\nCVV {4},".format(
-            tracker.get_slot("name"),
-            tracker.get_slot("phone_num"),
-            tracker.get_slot("email"),
-            tracker.get_slot("addr"),
-            tracker.get_slot("credit_card"),
-            tracker.get_slot("cvv"),
-        ))
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # logger.info("Console log Tracker.......", tracker)
+        logger.info("Console log Tracker.......", dir(tracker))
+        logger.info(".........................................")
+        # logger.info("Console log domain.......", domain)
+        logger.info("Console log domain.......", dir(domain))
+        dispatcher.utter_message(text="Testing rasa!")
+
         return []
+
+

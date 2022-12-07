@@ -1,9 +1,0 @@
-version: "3.1"
-nlu:
-- intent: convo_started
-  examples: |
-    - ...
-- intent: provide
-  examples: |
-    - sjbls
-    - my name is nameslotu
