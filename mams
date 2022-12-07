@@ -1,16 +1,17 @@
-- greeting
-- nonresponsive_statement
-- open_question elicitation
-- provide
-- positive_answer
-- hold
-- yes_no_question
-- thanking 
-- negative_answer
-- refusal
-- apology
-- responsive_statement 
-- response_to_thanking 
-- closing
+    - My name is [Crash Adams](name) and my address is [9098 Plymouth St. Sidney, OH](addr)
+    - I am [Crash Adams](name) and my address is [9619 South Newbridge Ave. Corona, NY](addr)
+    - My full name is [Crash Adams](name) and my address is [86 Bridge Road Manahawkin, NJ](addr)
+    - [Crash Adams](name) and my address is [812 Shirley Drive Pembroke Pines, FL](addr)
+    - I'm [Crash Adams](name) and my address is [George Court Cornelius, NC](addr)
+    - Hi I'm [Crash Adams](name) and my address is [79 Gulf St. Martinsville, VA](addr)
+    - Hey I'm [Crash Adams](name) and my address is [711-2880 Nulla St. Mankato Mississippi](addr)
+    - Sure My name is [Crash Adams](name) and my address is [P.O. Box 283 8562 Fusce Rd. Frederick Nebraska](addr)
+    - Okay I'm [Crash Adams](name) and my address is [606-3727 Ullamcorper. Street Roseville NH](addr)
+    - Ok I'm [Crash Adams](name) and my address is [Ap 867-859 Sit Rd. Azusa New York](addr)
+    - Sure [Crash Adams](name) and my address is [7292 Dictum Av. San Antonio MI](addr)
+    - Sure my full name is [Crash Adams](name) and my address is [191-103 Integer Rd. Corona New Mexico](addr)
+    - My name is [Crash Adams](name) and my address is [P.O. Box 887 2508 Dolor. Av. Muskegon KY](addr)
+    - I am [Crash Adams](name) and my address is [511-5762 At Rd. Chelsea MI](addr)
 
-    - my name is Kakamowa[ and my ]{"entity": "name", "value": "Kakamowa"}phone number is 9866697897[]{"entity": "phone_num", "value": "9866697897"}
+
+    

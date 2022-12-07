@@ -13,12 +13,21 @@ pipeline:
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
+  - name: CRFEntityExtractor
+    dimensions: ["addr"]
+  - name: SpacyNLP
+    model: "en_core_web_lg"
+  - name: SpacyEntityExtractor
+    dimensions: ["name"]
+  - name: DucklingEntityExtractor
+    url: http://localhost:8000/
+    dimensions: ["phone_num","email","exp_date","cvv","credit_card"]
   - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
+    entity_recognition: false
     epochs: 100
     constrain_similarities: true
   - name: EntitySynonymMapper
@@ -28,6 +37,7 @@ pipeline:
   - name: FallbackClassifier
     threshold: 0.3
     ambiguity_threshold: 0.1
+    # model: "en_core_web_md"
   # - name: DucklingHTTPExtractor
   #   url: http://localhost:8000/
   #   dimensions:

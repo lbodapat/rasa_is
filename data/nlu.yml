@@ -805,6 +805,161 @@ nlu:
     - what is the number you are calling from my phone did not say
     - you ve been so kind what is your name so i can leave a great review ?
 
+- intent: providessss
+  examples: |
+    - My name is [John Doe](name)
+    - I am [John Doe] (name)
+    - My full name is [John Doe] (name)
+    - [John Doe] (name)
+    - I'm [John Doe] (name)
+    - Hi I'm [John Doe] (name)
+    - Hey I'm [John Doe] (name)
+    - Sure My name is [John Doe] (name)
+    - Okay I'm [John Doe] (name)
+    - Ok I'm [John Doe] (name)
+    - Sure [John Doe] (name)
+    - Sure my full name is [John Doe] (name)
+    - My name is [Suraj Bodapati](name)
+    - I am [Suraj Bodapati](name)
+    - My full name is [Suraj Bodapati](name)
+    - [Suraj Bodapati](name)
+    - I'm [Suraj Bodapati](name)
+    - Hi I'm [Suraj Bodapati](name)
+    - Hey I'm [Suraj Bodapati](name)
+    - Sure My name is [Suraj Bodapati](name)
+    - Okay I'm [Suraj Bodapati](name)
+    - Ok I'm [Suraj Bodapati](name)
+    - Sure [Suraj Bodapati](name)
+    - Sure my full name is [Suraj Bodapati](name)
+    - My name is [Suraj Bodapati](name)
+    - I am [Suraj Bodapati](name)
+    - My full name is [Mary Jane Watson](name)
+    - [Mary Jane Watson](name)
+    - I'm [Mary Jane Watson](name)
+    - Hi I'm [Mary Jane Watson](name)
+    - Hey I'm [Mary Jane Watson](name)
+    - Sure My name is [Mary Jane Watson](name)
+    - Okay I'm [Mary Jane Watson](name)
+    - Ok I'm [Mary Jane Watson](name)
+    - Sure [Mary Jane Watson](name)
+    - Sure my full name is [Mary Jane Watson](name)
+    - My name is [Dr. Rohini Srihari](name)
+    - I am [Dr. Rohini Srihari](name)
+    - My full name is [Dr. Rohini Srihari](name)
+    - [Dr. Rohini Srihari](name)
+    - I'm [Dr. Rohini Srihari](name)
+    - Hi I'm [Dr. Rohini Srihari](name)
+    - Hey I'm [Dr. Rohini Srihari](name)
+    - Sure My name is [Dr. Rohini Srihari](name)
+    - Okay I'm [Dr. Rohini Srihari](name)
+    - Ok I'm [Dr. Rohini Srihari](name)
+    - Sure [Dr. Rohini Srihari](name)
+    - Sure my full name is [Dr. Rohini Srihari](name)
+    - My name is [James Smith](name) and my phone number is [201 911 0198](phone_num)
+    - I am [James Smith](name) and my phone number is [221 912 0198](phone_num)
+    - My full name is [James Smith](name) and my phone number is [901 912 0198](phone_num)
+    - [James Smith](name) and my phone number is [301 912 0198](phone_num)
+    - I'm [James Smith](name) and my phone number is [501 312 0198](phone_num)
+    - Hi I'm [James Smith](name) and my phone number is [701 914 0198](phone_num)
+    - Hey I'm [James Smith](name) and my phone number is [243 914 0358](phone_num)
+    - Sure My name is [James Smith](name) and my phone number is [901 322 0138](phone_num)
+    - Okay I'm [James Smith](name) and my phone number is [431 212 0128](phone_num)
+    - Ok I'm [James Smith](name) and my phone number is [432 423 4324](phone_num)
+    - Sure [James Smith](name) and my phone number is [234 234 2325](phone_num)
+    - Sure my full name is [James Smith](name) and my phone number is [757 242 6876](phone_num)
+    - My name is [Maria Garcia](name) and my phone number is [201 911 0198](phone_num)
+    - I am [Maria Garcia](name) and my phone number is [221 912 0198](phone_num)
+    - My full name is [Maria Garcia](name) and my no. is [901 912 0198](phone_num)
+    - [Maria Garcia](name) and my number is [301 912 0198](phone_num)
+    - I'm [Maria Garcia](name) and my number is [501 312 0198](phone_num)
+    - Hi I'm [Maria Garcia](name) and my number is [701 914 0198](phone_num)
+    - Hey I'm [Maria Garcia](name) and my number is [243 914 0358](phone_num)
+    - Sure My name is [Maria Garcia](name) and my number is [901 322 0138](phone_num)
+    - Okay I'm [Maria Garcia](name) and my number is [431 212 0128](phone_num)
+    - Ok I'm [Maria Garcia](name) and my number is [432 423 4324](phone_num)
+    - Sure [Maria Garcia](name) and my number is [234 234 2325](phone_num)
+    - Sure my full name is [Maria Garcia](name) and my contact detail is [757 242 6876](phone_num)
+    - My name is [Mr. James Johnson](name) and my contact detail is [201 911 0198](phone_num)
+    - I am [Mr. James Johnson](name) and my contact detail is [221 912 0198](phone_num)
+    - My full name is [Mr. James Johnson](name) and my contact detail is [901 912 0198](phone_num)
+    - [Mr. James Johnson](name) and my phone num is [301 912 0198](phone_num)
+    - I'm [Mr. James Johnson](name) and my phone num is [501 312 0198](phone_num)
+    - Hi I'm [Mr. James Johnson](name) and my phone num is [701 914 0198](phone_num)
+    - Hey I'm [Mr. James Johnson](name) and my ph num is [243 914 0358](phone_num)
+    - Sure My name is [Mr. James Johnson](name) and my ph num is [901 322 0138](phone_num)
+    - Okay I'm [Mr. James Johnson](name) and my ph no. is [431 212 0128](phone_num)
+    - Ok I'm [Mr. James Johnson](name) and my ph no. is [432 423 4324](phone_num)
+    - Sure [Mr. James Johnson](name) and my ph no is [234 234 2325](phone_num)
+    - Sure my full name is [Mr. James Johnson](name) and my no. is [757 242 6876](phone_num)
+    - My name is [Saleema Begum](name) and my contact  number is [201 911 0198](phone_num)
+    - I am [Saleema Begum](name) and my contact  number is [221 912 0198](phone_num)
+    - My full name is [Saleema Begum](name) and my contact  number is [901 912 0198](phone_num)
+    - [Saleema Begum](name) and my contact  number is [301 912 0198](phone_num)
+    - I'm [Saleema Begum](name) and my contact  number is [501 312 0198](phone_num)
+    - Hi I'm [Saleema Begum](name) and my contact  number is [701 914 0198](phone_num)
+    - Hey I'm [Saleema Begum](name) and my contact  number is [243 914 0358](phone_num)
+    - Sure My name is [Saleema Begum](name) and my contact  number is [901 322 0138](phone_num)
+    - Okay I'm [Saleema Begum](name) and my contact  num is [431 212 0128](phone_num)
+    - Ok I'm [Saleema Begum](name) and my contact  num is [432 423 4324](phone_num)
+    - Sure [Saleema Begum](name) and my contact  num is [234 234 2325](phone_num)
+    - Sure my full name is [Saleema Begum](name) and my contact num is [757 242 6876](phone_num)
+    - My name is [William Brown](name) and my address is [9098 Plymouth St. Sidney, OH 45365](addr)
+    - I am [William Brown](name) and my address is [9619 South Newbridge Ave. Corona, NY 11368](addr)
+    - My full name is [William Brown](name) and my address is [86 Bridge Road Manahawkin, NJ 08050](addr)
+    - [William Brown](name) and my address is [812 Shirley Drive Pembroke Pines, FL 33028](addr)
+    - I'm [William Brown](name) and my address is [George Court Cornelius, NC 28031](addr)
+    - Hi I'm [William Brown](name) and my address is [79 Gulf St. Martinsville, VA 24112](addr)
+    - Hey I'm [William Brown](name) and my address is [711-2880 Nulla St. Mankato Mississippi 96522](addr)
+    - Sure My name is [William Brown](name) and my address is [P.O. Box 283 8562 Fusce Rd. Frederick Nebraska 20620](addr)
+    - Okay I'm [William Brown](name) and my address is [606-3727 Ullamcorper. Street Roseville NH 11523](addr)
+    - Ok I'm [William Brown](name) and my address is [Ap 867-859 Sit Rd. Azusa New York 39531](addr)
+    - Sure [William Brown](name) and my address is [7292 Dictum Av. San Antonio MI 47096](addr)
+    - Sure my full name is [William Brown](name) and my address is [191-103 Integer Rd. Corona New Mexico 08219](addr)
+    - My name is [William Brown](name) and my address is [P.O. Box 887 2508 Dolor. Av. Muskegon KY 124828](addr)
+    - I am [William Brown](name) and my address is [511-5762 At Rd. Chelsea MI 67708](addr)
+    - My name is [Crash Adams](name) and my address is [9098 Plymouth St. Sidney, OH](addr)
+    - I am [Crash Adams](name) and my address is [9619 South Newbridge Ave. Corona, NY](addr)
+    - My full name is [Crash Adams](name) and my address is [86 Bridge Road Manahawkin, NJ](addr)
+    - [Crash Adams](name) and my address is [812 Shirley Drive Pembroke Pines, FL](addr)
+    - I'm [Crash Adams](name) and my address is [George Court Cornelius, NC](addr)
+    - Hi I'm [Crash Adams](name) and my address is [79 Gulf St. Martinsville, VA](addr)
+    - Hey I'm [Crash Adams](name) and my address is [711-2880 Nulla St. Mankato Mississippi](addr)
+    - Sure My name is [Crash Adams](name) and my address is [P.O. Box 283 8562 Fusce Rd. Frederick Nebraska](addr)
+    - Okay I'm [Crash Adams](name) and my address is [606-3727 Ullamcorper. Street Roseville NH](addr)
+    - Ok I'm [Crash Adams](name) and my address is [Ap 867-859 Sit Rd. Azusa New York](addr)
+    - Sure [Crash Adams](name) and my address is [7292 Dictum Av. San Antonio MI](addr)
+    - Sure my full name is [Crash Adams](name) and my address is [191-103 Integer Rd. Corona New Mexico](addr)
+    - My name is [Crash Adams](name) and my address is [P.O. Box 887 2508 Dolor. Av. Muskegon KY](addr)
+    - I am [Crash Adams](name) and my address is [511-5762 At Rd. Chelsea MI](addr)
+    - My name is [Micheal James Scott](name) and my addr is [9098 Plymouth St. Sidney, OH](addr)
+    - I am [Micheal James Scott](name) and my addr is [9619 South Newbridge Ave. Corona, NY](addr)
+    - My full name is [Micheal James Scott](name) and my addr is [86 Bridge Road Manahawkin, NJ](addr)
+    - [Micheal James Scott](name) and my addr is [812 Shirley Drive Pembroke Pines, FL](addr)
+    - I'm [Micheal James Scott](name) and my addr is [George Court Cornelius, NC](addr)
+    - Hi I'm [Micheal James Scott](name) and my addr is [79 Gulf St. Martinsville, VA](addr)
+    - Hey I'm [Micheal James Scott](name) and my addr is [711-2880 Nulla St. Mankato Mississippi](addr)
+    - Sure My name is [Micheal James Scott](name) and my addr is [P.O. Box 283 8562 Fusce Rd. Frederick Nebraska](addr)
+    - Okay I'm [Micheal James Scott](name) and my addr is [606-3727 Ullamcorper. Street Roseville NH](addr)
+    - Ok I'm [Micheal James Scott](name) and my addr is [Ap 867-859 Sit Rd. Azusa New York](addr)
+    - Sure [Micheal James Scott](name) and my addr is [7292 Dictum Av. San Antonio MI](addr)
+    - Sure my full name is [Micheal James Scott](name) and my addr is [191-103 Integer Rd. Corona New Mexico](addr)
+    - My name is [Micheal James Scott](name) and my addr is [P.O. Box 887 2508 Dolor. Av. Muskegon KY](addr)
+    - I am [Micheal James Scott](name) and my addr is [511-5762 At Rd. Chelsea MI](addr)
+    - My name is [Donald J Trump](name) and my billing address is [9098 Plymouth St. Sidney, OH](addr)
+    - I am [Donald J Trump](name) and my billing address is [9619 South Newbridge Ave. Corona, NY](addr)
+    - My full name is [Donald J Trump](name) and my billing address is [86 Bridge Road Manahawkin, NJ](addr)
+    - [Donald J Trump](name) and my billing address is [812 Shirley Drive Pembroke Pines, FL](addr)
+    - I'm [Donald J Trump](name) and my billing address is [George Court Cornelius, NC](addr)
+    - Hi I'm [Donald J Trump](name) and my billing address is [79 Gulf St. Martinsville, VA](addr)
+    - Hey I'm [Donald J Trump](name) and my billing address is [711-2880 Nulla St. Mankato Mississippi](addr)
+    - Sure My name is [Donald J Trump](name) and my billing address is [P.O. Box 283 8562 Fusce Rd. Frederick Nebraska](addr)
+    - Okay I'm [Donald J Trump](name) and my billing address is [606-3727 Ullamcorper. Street Roseville NH](addr)
+    - Ok I'm [Donald J Trump](name) and my billing address is [Ap 867-859 Sit Rd. Azusa New York](addr)
+    - Sure [Donald J Trump](name) and my billing address is [7292 Dictum Av. San Antonio MI](addr)
+    - Sure my full name is [Donald J Trump](name) and my billing address is [191-103 Integer Rd. Corona New Mexico](addr)
+    - My name is [Donald J Trump](name) and my billing address is [P.O. Box 887 2508 Dolor. Av. Muskegon KY](addr)
+    - I am [Donald J Trump](name) and my billing address is [511-5762 At Rd. Chelsea MI](addr)
+
 - intent: provide
   examples: |
     - address addrslot
@@ -895,37 +1050,19 @@ nlu:
     - yes this is nameslotu .
     - you have the one for addrslot right ?
     - you should be able to find it with this nameslotu phoneslot
+    - sure my name is nameslotu
 
 - intent: positive_answer
   examples: |
     - i believe it is nameslota
     - i believe the payment went through but i am not sure
-    - i can yes .
     - i did
     - i did not receive my item
-    - i suppose so .
     - i think that d be the smart thing to do .
     - i will try and find my account number .
-    - of course .
-    - please do and cancel my prime too
-    - speaking .
-    - sure
-    - sure my name is nameslotu
-    - sure nameslota .
-    - sure no problem
-    - sure what kind of information u need ?
-    - sure will
     - the same as the shipping address
     - weird but yes i can add it on my payments page
-    - well of course i wand my refund
-    - yep my order never got delivered .
-    - yes
-    - yes .
-    - yes but first can you tell me where the package was shipped to .
-    - yes i am sure
     - yes i bought a heater and it still hasn t arrived yet
-    - yes i did
-    - yes i do have problem
     - yes i had ordered an heater but still doesnot delivered
     - yes i have i bought a heater and it has not arrived
     - yes i just recently bought a heater it hasnt arrived .
@@ -958,10 +1095,6 @@ nlu:
     - why did you message me ?
     - how can I help you ?
     - what is the problem ?
-
-- intent: hold
-  examples: |
-    - ?
     - ah yes
     - all right .
     - fantastic !
@@ -1013,8 +1146,23 @@ nlu:
     - wow .
     - yeah okay .
     - yes !
+    - yes.
+    - of course .
+    - sure
+    - sure no problem
+    - sure will
+    - sure nameslota .
+    - i can yes .
+    - i suppose so .
+    - speaking .
+    - yes
     - yes .
-
+    - yep my order never got delivered .
+    - well of course i wand my refund
+    - yes i am sure
+    - yes i did
+    - yes i do have problem
+    
 - intent: yes_no_identity
   examples: |
     - amazon ?

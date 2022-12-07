@@ -8,7 +8,6 @@ intents:
   - elicitation
   - provide
   - positive_answer
-  - hold
   - yes_no_question
   - thanking 
   - negative_answer
@@ -23,62 +22,79 @@ intents:
   - yes_no_identity
   - yes_no_help
   - test
+  - providessss
 
 entities:
   - name
   - phone_num
+  - addr
   - email
   - credit_card
   - cvv
-  - addr
   - exp_date
 
 slots:
   name:
     type: text
-    # influence_conversation: false
+    influence_conversation: true
     mappings:
     - type: from_entity
-      intent: provide
+      intent: providessss
       entity: name
   phone_num:
     type: text
+    influence_conversation: true
     mappings:
     - type: from_entity
-      intent: provide
+      intent: providessss
       entity: phone_num
+  addr:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      intent: providessss
+      entity: addr
   email:
     type: text
     mappings:
     - type: from_entity
-      intent: provide
+      intent: providessss
       entity: email
   credit_card:
     type: text
     mappings:
     - type: from_entity
-      intent: provide
+      intent: providessss
       entity: credit_card
   cvv:
     type: text
     mappings:
     - type: from_entity
-      intent: provide
+      intent: providessss
       entity: cvv
-  addr:
-    type: text
-    mappings:
-    - type: from_entity
-      intent: provide
-      entity: addr
   exp_date:
     type: text
     mappings:
     - type: from_entity
-      intent: provide
+      intent: providessss
       entity: exp_date
 
+forms:
+  ellicitation_form:
+    required_slots:
+      - name
+      - phone_num
+      - addr
+      - email
+      - credit_card
+      - cvv
+      - exp_date
+
 responses:
+  utter_slot_test:
+  - text: Your details are Name- {name}, Address- {addr} and Phone Number- {phone_num}
+
   utter_ask_name:
   - text: "Please can you confirm your full name ?"
   - text: "May I know your full name for confirmation ?"
@@ -1341,6 +1357,7 @@ responses:
   
 actions:
   - action_test_rasa
+  - utter_slot_test
 
 session_config:
   session_expiration_time: 60

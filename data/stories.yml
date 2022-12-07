@@ -5,9 +5,12 @@ stories:
 # - story: test
 #   steps:
 #   - intent: convo_started
-#   - active_loop: Form_Info
-#   - intent: hold
-#   - active_loop: null
+#   - action: utter_ask_name
+#   - intent: providessss
+#   - action: utter_ask_phone_num
+#   - intent: providessss
+#   - action: utter_ask_addr
+#   - intent: providessss
 
 # - story: test1
 #   steps:
@@ -24,150 +27,150 @@ stories:
 #   - intent: provide
 #   - action: utter_thanking_elicited
 
-- story: greeting flow 1- Elict -> Hold -> Provide
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: greeting_question
-  - action: utter_greet_reply
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: thanking
-  - action: utter_elicitation_basic_info
-  - intent: hold
-  - action: utter_thanking_basic
-  - intent: provide
-  - action: utter_thanking_elicited
+# - story: greeting flow 1- Elict -> positive_answer -> Provide
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: greeting_question
+#   - action: utter_greet_reply
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: thanking
+#   - action: utter_elicitation_basic_info
+#   - intent: positive_answer
+#   - action: utter_thanking_basic
+#   - intent: provide
+#   - action: utter_thanking_elicited
 
-- story: greeting flow 1-   Elict -> Hold -> Refuse -> Warn -> Provide
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: greeting_question
-  - action: utter_greet_reply
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: hold
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_warning
-  - action: utter_elicitation_basic_info
-  - intent: provide
-  - action: utter_thanking_elicited
+# - story: greeting flow 1-   Elict -> positive_answer -> Refuse -> Warn -> Provide
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: greeting_question
+#   - action: utter_greet_reply
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: positive_answer
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_warning
+#   - action: utter_elicitation_basic_info
+#   - intent: provide
+#   - action: utter_thanking_elicited
 
-- story: greeting flow 1-  Elict -> Hold -> Refuse -> Warn -> Refuse -> End
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: greeting_question
-  - action: utter_greet_reply
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: hold
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_warning
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_thanking_basic
-  - action: utter_closing
+# - story: greeting flow 1-  Elict -> positive_answer -> Refuse -> Warn -> Refuse -> End
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: greeting_question
+#   - action: utter_greet_reply
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: positive_answer
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_warning
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_thanking_basic
+#   - action: utter_closing
 
-- story: greeting flow 2- Elict -> Hold -> Provide
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: greeting
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: thanking
-  - action: utter_elicitation_basic_info
-  - intent: hold
-  - action: utter_thanking_basic
-  - intent: provide
-  - action: utter_thanking_elicited
+# - story: greeting flow 2- Elict -> positive_answer -> Provide
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: greeting
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: thanking
+#   - action: utter_elicitation_basic_info
+#   - intent: positive_answer
+#   - action: utter_thanking_basic
+#   - intent: provide
+#   - action: utter_thanking_elicited
   
 
-- story: greeting flow 2- Elict -> Hold -> Refuse -> Warn -> Provide
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: greeting
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: hold
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_warning
-  - action: utter_elicitation_basic_info
-  - intent: provide
-  - action: utter_thanking_elicited
+# - story: greeting flow 2- Elict -> positive_answer -> Refuse -> Warn -> Provide
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: greeting
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: positive_answer
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_warning
+#   - action: utter_elicitation_basic_info
+#   - intent: provide
+#   - action: utter_thanking_elicited
 
-- story: greeting flow 2- Elict -> Hold -> Refuse -> Warn -> Refuse -> End
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: greeting
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: hold
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_warning
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_thanking_basic
-  - action: utter_closing
+# - story: greeting flow 2- Elict -> positive_answer -> Refuse -> Warn -> Refuse -> End
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: greeting
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: positive_answer
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_warning
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_thanking_basic
+#   - action: utter_closing
 
-- story: greeting flow 3- Elict -> Hold -> Provide
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: negative_answer
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: thanking
-  - action: utter_elicitation_basic_info
-  - intent: hold
-  - action: utter_thanking_basic
-  - intent: provide
-  - action: utter_thanking_elicited
+# - story: greeting flow 3- Elict -> positive_answer -> Provide
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: negative_answer
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: thanking
+#   - action: utter_elicitation_basic_info
+#   - intent: positive_answer
+#   - action: utter_thanking_basic
+#   - intent: provide
+#   - action: utter_thanking_elicited
 
-- story: greeting flow 3- Elict -> Hold -> Refuse -> Warn -> Provide
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: negative_answer
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: hold
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_warning
-  - action: utter_elicitation_basic_info
-  - intent: provide
-  - action: utter_thanking_elicited
+# - story: greeting flow 3- Elict -> positive_answer -> Refuse -> Warn -> Provide
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: negative_answer
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: positive_answer
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_warning
+#   - action: utter_elicitation_basic_info
+#   - intent: provide
+#   - action: utter_thanking_elicited
 
-- story: greeting flow 3- Elict -> Hold -> Refuse -> Warn -> Refuse -> End
-  steps:
-  - intent: convo_started
-  - action: utter_greet
-  - intent: negative_answer
-  - action: utter_bottext
-  - intent: hold
-  - action: utter_apology
-  - intent: hold
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_warning
-  - action: utter_elicitation_basic_info
-  - intent: refusal
-  - action: utter_thanking_basic
-  - action: utter_closing
+# - story: greeting flow 3- Elict -> positive_answer -> Refuse -> Warn -> Refuse -> End
+#   steps:
+#   - intent: convo_started
+#   - action: utter_greet
+#   - intent: negative_answer
+#   - action: utter_bottext
+#   - intent: positive_answer
+#   - action: utter_apology
+#   - intent: positive_answer
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_warning
+#   - action: utter_elicitation_basic_info
+#   - intent: refusal
+#   - action: utter_thanking_basic
+#   - action: utter_closing
