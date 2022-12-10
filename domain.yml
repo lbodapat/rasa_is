@@ -93,7 +93,7 @@ forms:
 
 responses:
   utter_slot_test:
-  - text: Your details are Name- {name}, Address- {addr} and Phone Number- {phone_num}
+  - text: Your details are Name- {name}, Address- {addr} and Phone Number- {phone_num}, credit- {credit_card}, cvv- {cvv} and exp is {exp_date}
 
   utter_ask_name:
   - text: "Please can you confirm your full name ?"

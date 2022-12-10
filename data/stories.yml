@@ -5,12 +5,11 @@ stories:
 # - story: test
 #   steps:
 #   - intent: convo_started
-#   - action: utter_ask_name
-#   - intent: providessss
-#   - action: utter_ask_phone_num
-#   - intent: providessss
-#   - action: utter_ask_addr
-#   - intent: providessss
+#   - action: ellicitation_form
+#   - active_loop: ellicitation_form
+#   - action: action_deactivate_loop
+#   - active_loop: null
+#   - action: utter_thanking_elicited
 
 # - story: test1
 #   steps:
