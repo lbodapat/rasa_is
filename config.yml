@@ -15,15 +15,15 @@ pipeline:
   - name: LexicalSyntacticFeaturizer
   - name: DucklingEntityExtractor
     url: http://localhost:8000/
-    dimensions: ["email","exp_date","phone_num"]
+    dimensions: ["email","exp_date"]
   - name: RegexEntityExtractor
-    dimensions: ["credit_card","cvv"]
+    dimensions: ["credit_card","phone_num"]
   - name: CRFEntityExtractor
     dimensions: ["addr"]
   - name: SpacyNLP
     model: "en_core_web_lg"
   - name: SpacyEntityExtractor
-    dimensions: ["name"]
+    dimensions: ["name","cvv"]
   - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1

@@ -1,10 +1,10 @@
 version: "3.1"
 
-rules:
-- rule: Start Conversation with user
-  steps:
-  - intent: greeting
-  - action: utter_slot_test
+# rules:
+# - rule: Start Conversation with user
+#   steps:
+#   - intent: greeting
+#   - action: utter_slot_test
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
@@ -12,19 +12,19 @@ rules:
   - action: utter_iamabot
   - action: utter_bottext
 
-- rule: Test actions in RASA
-  steps:
-  - intent: convo_started
-  - action: ellicitation_form
-  - active_loop: ellicitation_form
+# - rule: Test actions in RASA
+#   steps:
+#   - intent: convo_started
+#   - action: ellicitation_form
+#   - active_loop: ellicitation_form
 
-- rule: Abcs
-  condition:
-  - active_loop: ellicitation_form
-  steps:
-  - action: ellicitation_form
-  - active_loop: null
-  - slot_was_set:
-    - requested_slot: null
-  - action: utter_thanking_survey
-  - action: utter_slot_test
+# - rule: Abcs
+#   condition:
+#   - active_loop: ellicitation_form
+#   steps:
+#   - action: ellicitation_form
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_thanking_survey
+#   - action: utter_slot_test

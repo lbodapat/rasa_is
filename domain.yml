@@ -22,7 +22,7 @@ intents:
   - yes_no_identity
   - yes_no_help
   - test
-  - providessss
+  - hesitate
 
 entities:
   - name
@@ -39,45 +39,45 @@ slots:
     influence_conversation: true
     mappings:
     - type: from_entity
-      intent: providessss
+      intent: provide
       entity: name
   phone_num:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
-      intent: providessss
+      intent: provide
       entity: phone_num
   addr:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
-      intent: providessss
+      intent: provide
       entity: addr
   email:
     type: text
     mappings:
     - type: from_entity
-      intent: providessss
+      intent: provide
       entity: email
   credit_card:
     type: text
     mappings:
     - type: from_entity
-      intent: providessss
+      intent: provide
       entity: credit_card
   cvv:
     type: text
     mappings:
     - type: from_entity
-      intent: providessss
+      intent: provide
       entity: cvv
   exp_date:
     type: text
     mappings:
     - type: from_entity
-      intent: providessss
+      intent: provide
       entity: exp_date
 
 forms:
