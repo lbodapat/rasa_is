@@ -1,0 +1,212 @@
+
+version: "3.1"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: convo_started
+  - action: utter_greet
+  - intent: greeting_question
+  - action: utter_greet_reply
+  - action: utter_bottext
+  - intent: surprise
+  - action: utter_elicitation_basic_info
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+
+- story: interactive_story_1
+  steps:
+  - intent: convo_started
+  - action: utter_greet
+  - intent: greeting
+  - action: utter_bottext
+  - intent: surprise
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+  - action: utter_thanking_basic
+  - action: ellicitation_form
+  - active_loop: ellicitation_form
+  - slot_was_set:
+    - requested_slot: name
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+
+- story: interactive_story_1
+  steps:
+  - intent: convo_started
+  - action: utter_greet
+  - intent: greeting
+  - action: utter_bottext
+  - intent: surprise
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+  - action: utter_thanking_basic
+  - action: ellicitation_form
+  - active_loop: ellicitation_form
+  - slot_was_set:
+    - requested_slot: name
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - action: ellicitation_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Harvey Ross
+  - slot_was_set:
+    - requested_slot: phone_num
+  - slot_was_set:
+    - phone_num: +1(921)9242838
+  - slot_was_set:
+    - requested_slot: addr
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - action: ellicitation_form
+  - slot_was_set:
+    - requested_slot: addr
+  - slot_was_set:
+    - addr: 832 North Avenue Rd Tempe AZ 2812
+  - slot_was_set:
+    - requested_slot: email
+  - slot_was_set:
+    - email: dskj@gmail.com
+  - slot_was_set:
+    - requested_slot: credit_card
+  - slot_was_set:
+    - credit_card: 9349 2849 9304 9204
+  - slot_was_set:
+    - requested_slot: cvv
+  - slot_was_set:
+    - cvv: '839'
+  - slot_was_set:
+    - exp_date: 10/23
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_slot_test
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_thanking_survey
+
+- story: interactive_story_1
+  steps:
+  - intent: convo_started
+  - action: utter_greet
+  - intent: greeting
+  - action: utter_bottext
+  - intent: surprise
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+  - action: utter_thanking_basic
+  - action: ellicitation_form
+  - active_loop: ellicitation_form
+  - slot_was_set:
+    - requested_slot: name
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - action: ellicitation_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Ravi Kishan
+  - slot_was_set:
+    - requested_slot: phone_num
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+
+- story: interactive_story_2
+  steps:
+  - intent: convo_started
+  - action: utter_greet
+  - intent: greeting_question
+  - action: utter_greet_reply
+  - action: utter_bottext
+  - intent: surprise
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+  - action: utter_thanking_basic
+  - action: ellicitation_form
+  - active_loop: ellicitation_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Ganesh Acharya
+  - slot_was_set:
+    - requested_slot: phone_num
+  - slot_was_set:
+    - phone_num: +1(201)3728239
+  - slot_was_set:
+    - requested_slot: addr
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - intent: surprise
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+  - intent: positive_answer
+
+- story: interactive_story_1
+  steps:
+  - intent: convo_started
+  - action: utter_greet
+  - intent: greeting
+  - action: utter_bottext
+  - intent: surprise
+  - action: utter_elicitation_basic_info
+  - intent: positive_answer
+  - action: utter_thanking_basic
+  - action: ellicitation_form
+  - active_loop: ellicitation_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Araya Reddy
+  - slot_was_set:
+    - phone_num: +1(203)9248234
+  - slot_was_set:
+    - requested_slot: addr
+  - intent: elicitation
+  - action: utter_elicitation_response
+  - action: utter_elicitation_basic_info
+  - action: ellicitation_form
+  - slot_was_set:
+    - requested_slot: addr
+  - slot_was_set:
+    - addr: 2912 South Park Ave Tempe AZ 1634
+  - slot_was_set:
+    - requested_slot: email
+  - slot_was_set:
+    - email: J@j.com
+  - slot_was_set:
+    - requested_slot: credit_card
+  - slot_was_set:
+    - credit_card: 2923 2943 5065 3056
+  - slot_was_set:
+    - requested_slot: cvv
+  - slot_was_set:
+    - cvv: '384'
+  - slot_was_set:
+    - exp_date: 10/23
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_slot_test
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_thanking_survey
