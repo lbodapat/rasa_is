@@ -1722,6 +1722,17 @@ nlu:
     - Im sure I havent used Amazon to make any purchase.
     - Wrong person.
     - Sorry wrong person I guess.
+    - Are you sure you got the right person ? I never ordered a Laptop
+    - I didnt order any Laptop
+    - Why am I being charged for the Laptop ?
+    - Let me check with my son
+    - Let me check with my husband
+    - Let me check with my daughter
+    - I never order on Amazon
+    - I am sure it is not me
+    - You got the rong person
+    - Please check again, I didnt order any Laptop
+    - No way I ordered a Laptop
 
 - intent: positive_answer
   examples: |
