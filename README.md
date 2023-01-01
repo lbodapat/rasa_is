@@ -13,6 +13,7 @@ Deception Awareness & Resilience Training (DART) NSF Convergence Accelerator
 ### Datasets:
 [**End-to-End Trainable Non-Collaborative Dialog System**](https://arxiv.org/abs/1911.10742): https://gitlab.com/ucdavisnlp/antiscam
 
+[embed]https://github.com/lbodapat/rasa_is/blob/master/report.pptx.pdf[/embed]
 
 ### Training and Inference
 Our model is build on top of [Huggingface](https://huggingface.co/) transformer library, and can be found in [this](https://github.com/sougata-ub/personality-response-generation-transformers) repo.
