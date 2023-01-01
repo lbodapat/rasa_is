@@ -13,8 +13,6 @@ Deception Awareness & Resilience Training (DART) NSF Convergence Accelerator
 ### Datasets:
 [**End-to-End Trainable Non-Collaborative Dialog System**](https://arxiv.org/abs/1911.10742): https://gitlab.com/ucdavisnlp/antiscam
 
-[embed] https://github.com/lbodapat/rasa_is/blob/master/report.pptx.pdf [/embed]
-[embed]http://example.com/file.pdf[/embed]
 ### Training and Inference
 Our model is build on top of [Huggingface](https://huggingface.co/) transformer library, and can be found in [this](https://github.com/sougata-ub/personality-response-generation-transformers) repo.
 
@@ -24,6 +22,8 @@ In order to experiment with different parameters, you can directly execute the `
 ```
 python -m torch.distributed.run --nnodes=1 --nproc_per_node=2 --master_port 9999 ./run_training_v2.py --batch_size 16 --num_epochs 15 --learning_rate 0.00002 --experiment_num "$i" --path "/home/sougatas/wikibot_naacl_2022/data/" --num_workers 4 --accum_iter 2 --results_folder "/home/sougatas/wikibot_naacl_2022/results/results_wow_blender_v4/" --model_folder "/home/sougatas/wikibot_naacl_2022/models/models_v2/"
 ```
+
+![Alt text](https://github.com/lbodapat/rasa_is/tree/master/Notebooks/output.png "Output SS")
 
 ### Additional Models
 1. BERT based intent classifier: https://drive.google.com/file/d/1jbGeLyfuaTRh9N3o3VSYiNqiX71d93lS/view?usp=sharing
