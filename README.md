@@ -24,4 +24,4 @@ Deception Awareness & Resilience Training (DART) NSF Convergence Accelerator
 
 ![Alt text](/Notebooks/output.png?raw=true "Output ScreenShot")
 
-https://docs.google.com/viewer?url=https://github.com/lbodapat/rasa_is/blob/master/report.pptx.pdf
+https://docs.google.com/viewer?url=https://docs.google.com/presentation/d/1QZHbdAjctMP8C_mK0O53oPlHzP_FRJmx/edit#slide=id.p1
