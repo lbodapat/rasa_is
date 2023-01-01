@@ -43,9 +43,105 @@ nlu:
     - i am good how are you ?
     - hi yes thats me how are you ?
     - how are you this evening ?
+    - Hello John how are you ? 
+    - hello John how are you ?
+    - Hello john how are you ?
+    - hello john how are you ?
+    - Hello Jhon how are you ?
+    - hello Jhon how are you ?
+    - Hello jhon how are you ?
+    - hello jhon how are you ?
+    - Hello John Smith how are you ?
+    - hello John Smith how are you ?
+    - Hello john Smith how are you ?
+    - hello john Smith how are you ?
+    - Hello Jhon Smith how are you ?
+    - hello Jhon Smith how are you ?
+    - Hello jhon Smith how are you ?
+    - hello jhon Smith how are you ?
+    - Hey John how are you ?
+    - hey John how are you ?
+    - Hey john how are you ?
+    - hey john how are you ?
+    - Hey Jhon how are you ?
+    - hey Jhon how are you ?
+    - Hey jhon how are you ?
+    - hey jhon how are you ?
+    - Hey John Smith how are you ?
+    - hey John Smith how are you ?
+    - Hey john Smith how are you ?
+    - hey john Smith how are you ?
+    - Hey Jhon Smith how are you ?
+    - hey Jhon Smith how are you ?
+    - Hey jhon Smith how are you ?
+    - hey jhon Smith how are you ?
+    - Hi John how are you ?
+    - hi John how are you ?
+    - Hi john how are you ?
+    - hi john how are you ?
+    - Hi Jhon how are you ?
+    - hi Jhon how are you ?
+    - Hi jhon how are you ?
+    - hi jhon how are you ?
+    - Hi John Smith how are you ?
+    - hi John Smith how are you ?
+    - Hi john Smith how are you ?
+    - hi john Smith how are you ?
+    - Hi Jhon Smith how are you ?
+    - hi Jhon Smith how are you ?
+    - Hi jhon Smith how are you ?
+    - hi jhon Smith how are you ?
 
 - intent: greeting
   examples: |
+    - Hello John
+    - hello John
+    - Hello john
+    - hello john
+    - Hello Jhon
+    - hello Jhon
+    - Hello jhon
+    - hello jhon
+    - Hello John Smith
+    - hello John Smith
+    - Hello john Smith
+    - hello john Smith
+    - Hello Jhon Smith
+    - hello Jhon Smith
+    - Hello jhon Smith
+    - hello jhon Smith
+    - Hey John
+    - hey John
+    - Hey john
+    - hey john
+    - Hey Jhon
+    - hey Jhon
+    - Hey jhon
+    - hey jhon
+    - Hey John Smith
+    - hey John Smith
+    - Hey john Smith
+    - hey john Smith
+    - Hey Jhon Smith
+    - hey Jhon Smith
+    - Hey jhon Smith
+    - hey jhon Smith
+    - Hi John
+    - hi John
+    - Hi john
+    - hi john
+    - Hi Jhon
+    - hi Jhon
+    - Hi jhon
+    - hi jhon
+    - Hi John Smith
+    - hi John Smith
+    - Hi john Smith
+    - hi john Smith
+    - Hi Jhon Smith
+    - hi Jhon Smith
+    - Hi jhon Smith
+    - hi jhon Smith
     - hey
     - how can I help you ?
     - hello nameslota .
