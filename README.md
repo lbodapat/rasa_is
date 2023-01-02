@@ -20,6 +20,8 @@ Deception Awareness & Resilience Training (DART) NSF Convergence Accelerator
 3. RUN command on CLI - ```rasa train```
 4. To test the model RUN command on CLI - ```rasa shell```
 5. To test the model in DEBUG mode, RUN command on CLI - ```rasa interactive```
+6. In the new terminal window RUN command on CLI - ```rasa run actions``` This is required to run the action server.
+7. Finally In another new terminal run the Duckling Extractor in Docker. ```sudo docker run -p 8000:8000 rasa/duckling```
 
 ### Output Screenshot
 
